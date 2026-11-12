@@ -2,6 +2,7 @@ from random import choice
 
 from datetime import date
 
+
 def main() -> None:
     print("Hello from ruff-action-test!")
     print(junk())
@@ -20,10 +21,9 @@ def junk() -> str:
     )
     return s
 
-def stuff()->str:
-    s = choice(
-        ["A","B","C","D"]
-    )
+
+def stuff() -> str:
+    s = choice(["A", "B", "C", "D"])
     return s
 
 
