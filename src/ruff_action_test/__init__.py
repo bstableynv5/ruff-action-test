@@ -1,6 +1,5 @@
-from random import choice
-
 from datetime import date
+from random import choice
 
 
 def main() -> None:
@@ -25,6 +24,3 @@ def junk() -> str:
 def stuff() -> str:
     s = choice(["A", "B", "C", "D"])
     return s
-
-
-
