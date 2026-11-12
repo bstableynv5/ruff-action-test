@@ -1,6 +1,6 @@
+import os
 from datetime import date
 from random import choice
-import os
 
 
 def main() -> None:
@@ -27,7 +27,7 @@ def stuff() -> str:
     return s
 
 
-def poop(arg:int)->str:
+def poop(arg: int) -> str:
     """crap dfsd sdf sdf sd sd f sdf sdfsdfds sdfdsf dsf sdfsdf sdf sdf dsfsd fsdf sdf sdf dsf sdfd sf sdf.
 
     Args:
