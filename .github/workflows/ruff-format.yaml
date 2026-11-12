@@ -24,7 +24,7 @@ jobs:
       - name: Run Ruff Organize Imports
         uses: astral-sh/ruff-action@v4.1.0
         with:
-          args: "--select I --fix"
+          args: "check --select I --fix"
 
       - name: Run Ruff Format and Fix
         uses: astral-sh/ruff-action@v4.1.0
