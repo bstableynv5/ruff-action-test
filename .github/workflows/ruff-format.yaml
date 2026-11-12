@@ -21,10 +21,15 @@ jobs:
         with:
           python-version-file: ".python-version"
 
+      - name: Run Ruff Organize Imports
+        uses: astral-sh/ruff-action@v4.1.0
+        with:
+          args: "--select I --fix"
+
       - name: Run Ruff Format and Fix
         uses: astral-sh/ruff-action@v4.1.0
         with:
-          args: format # You can also combine lint fixes: check --fix
+          args: format
 
       - name: Commit and push changes
         uses: stefanzweifel/git-auto-commit-action@v7
