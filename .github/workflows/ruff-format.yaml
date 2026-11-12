@@ -1,10 +1,12 @@
-name: Ruff Format
+name: Ruff Format + Organize Imports
 
 on:
+  # pushest to branch include direct pushes as well as PR merges
   push:
     branches:
-      - main # Or your default branch
-  pull_request:
+      - main
+  # PR run over and over on each push to PR, which makes dev annoying
+  # pull_request:
 
 jobs:
   ruff:
@@ -26,7 +28,7 @@ jobs:
         with:
           args: "check --select I --fix"
 
-      - name: Run Ruff Format and Fix
+      - name: Run Ruff Format
         uses: astral-sh/ruff-action@v4.1.0
         with:
           args: format
